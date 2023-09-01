@@ -1,3 +1,5 @@
+require_relative '../decorators/nameable'
+
 class Person
   attr_accessor :name, :age
   attr_reader :id
