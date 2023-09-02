@@ -2,7 +2,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h3><b>OOPS-LIBRARY</b></h3>
+  <h3><b>OOPS-LIBRARY Management System</b></h3>
 </div>
 
 # 📗 Table of Contents
@@ -14,6 +14,8 @@
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
+  - [Install](#install)
+  - [Usage](#usage)
   - [Run tests](#run-tests)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
@@ -67,10 +69,11 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Book Tracking**
-- **User Management**
-- **Borrowing Records**
-- **Book Addition**
+- **Gemfile**
+- **Rubocop**
+- **Gemfile.lock**
+- **Add Person, Student and Teacher in Classes**
+- **Decorator design pattern**
 - **User-friendly Interface**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -83,6 +86,9 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
+```
+install ruby
+```
 - Ruby Version Manager (RVM) or rbenv
 - Bundler
 - Gem
@@ -94,10 +100,28 @@ In order to run this project you need:
 Clone this repository to your desired folder using:
 `git clone https://github.com/supreeti/OOPS-Library-Management-System.git` on your terminal.
 
+### Install
+
+Install this project with:
+
+```sh
+  cd my-project
+  gem install
+```
+
+### Usage
+
+To run the project, execute the following command:
+
+```sh
+  rails server
+```
+
 ### Run tests
 
-To run tests use the following command:
-`rubocop`
+To run tests, run the following command:
+
+`sh bin/rails test test/models/article_test.rb`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
