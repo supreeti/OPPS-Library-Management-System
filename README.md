@@ -142,6 +142,6 @@ I would like to thank Microverse for proposing this project, and to my fellow pr
 ## ❓ FAQ <a name="faq"></a>
 
 ## 📝 License <a name="license"></a>
-This project is [MIT](https://github.com/supreeti/OOPS-Library-Management-System/blob/main/LICENSE) licensed.
+This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
