@@ -1,6 +1,6 @@
-require './decorators/nameable'
-require './decorators/trim'
-require './decorators/capitalize_decorator'
+require_relative './decorators/nameable'
+require_relative './decorators/trim'
+require_relative './decorators/capitalize_decorator'
 require_relative 'rental'
 
 class Person < Nameable
@@ -33,11 +33,3 @@ class Person < Nameable
     @age >= 18 && false
   end
 end
-
-person = Person.new(22, 'maximilianus')
-puts person.correct_name
-capitalized_person = CapitalizeDecorator.new(person)
-puts capitalized_person.correct_name
-
-capitalized_trimmed_person = TrimmerDecorator.new(capitalized_person)
-puts capitalized_trimmed_person.correct_name

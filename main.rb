@@ -2,7 +2,7 @@ require_relative 'app'
 app = App.new
 
 def choices(app)
-  puts 'Welcome to School Library App!'
+  puts 'Welcome to App!'
   loop do
     puts 'Please choose an option by enterin a number:'
     puts '1 - List all books'
@@ -25,7 +25,7 @@ def choose_any(app, num)
   when 1
     app.list_books
   when 2
-    app.list_people
+    app.list_persons
   when 3
     app.create_person
   when 4
