@@ -24,7 +24,7 @@ class App
       if person.instance_of?(Student)
         puts "[Student]Age: #{person.age},Name: #{person.name}, ID: #{person.id} "
       else
-        puts "[Teacher]Age: #{person.age} Name: #{person.name}, ID: #{person.id}"
+        puts "[Teacher]Age: #{person.age}, Name: #{person.name}, ID: #{person.id}"
       end
     end
   end
@@ -32,12 +32,12 @@ class App
   # create person
   def create_person
     print 'Do you want to add a student (1) or a teacher (2)? [Insert the number]: '
-    is_student = gets.chomp.strip.to_i
+    student = gets.chomp.strip.to_i
     print 'Age: '
     age = gets.chomp.to_i
     print 'Name: '
     person_name = gets.chomp
-    case is_student
+    case student
 
     when 1
       puts 'Has Parent Permission [Y/N]'
@@ -73,7 +73,7 @@ class App
   def create_rental
     puts 'Select a book from the following list by number'
     @books.each_with_index do |book, index|
-      puts "#{index}) Title: #{book.title}, Author: #{book.author}"
+      puts "#{index}) Author: #{book.author}, Title: #{book.title}"
     end
     book_index = gets.chomp.to_i
     print 'Select a person from the following list by number (not ID)'
